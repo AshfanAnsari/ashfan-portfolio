@@ -30,7 +30,7 @@
       }
       body {
         margin: 0;
-        background: #ffffff;
+        background: #E9DFD2;
         color: #211a15;
         font-family: 'Archivo', Arial, sans-serif;
         font-size: 17px;
@@ -38,8 +38,20 @@
       }
       main {
         width: min(680px, 100% - 48px);
-        margin: 0 auto;
-        padding: 64px 0 80px;
+        margin: 48px auto 72px;
+        padding: clamp(32px, 5vw, 56px);
+        background: #f7f1e6;
+        border: 1px solid rgba(33, 26, 21, 0.06);
+        border-radius: 28px;
+        box-shadow:
+          0 30px 60px -18px rgba(84, 64, 44, 0.28),
+          0 12px 24px rgba(84, 64, 44, 0.1);
+      }
+      @media (max-width: 520px) {
+        main {
+          border-radius: 24px;
+          margin: 24px auto 40px;
+        }
       }
       h1 {
         font-family: 'Fraunces', Georgia, serif;
@@ -63,10 +75,12 @@
         margin: 0 0 14px;
       }
       a {
-        color: #e31000;
+        color: #211a15;
+        text-decoration-color: rgba(33, 26, 21, 0.45);
+        text-underline-offset: 3px;
       }
       a:focus-visible {
-        outline: 2px solid #e31000;
+        outline: 2px solid #211a15;
         outline-offset: 3px;
       }
       .back {
